@@ -1,0 +1,17 @@
+javascript:(function(){
+	// Here I get the header element that contains the search bar and delete it
+	header = document.getElementsByClassName(“onegoogle noprint”)[0];
+	header.parentNode.removeChild(header);
+
+	// Here I get the footer element and delete it
+	footer = document.getElementsByClassName(“mapfooter”)[0];
+	footer.parentNode.removeChild(footer);
+
+	// Here I 'click' the arrow on the left sidebar
+	document.getElementById(“panelarrow2″).click();
+
+	// Here I get the map element and resize it to be window height
+	map = document.getElementById(“map”);
+	map.style.height = window.innerHeight + ‘px’;
+
+})();
